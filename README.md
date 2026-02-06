@@ -1,6 +1,10 @@
-# Cp
+# Crypto Pulse
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+This project is an Angular application that displays real-time cryptocurrency prices and charts. It connects to a WebSocket to fetch live trading data for various cryptocurrencies.
+
+For more details on the project's implementation and components, please refer to the source code located in the `src/` directory.
+
+You can view the live application here: https://cryptopulse-puce.vercel.app
 
 ## Development server
 
