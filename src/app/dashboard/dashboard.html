@@ -1,0 +1,37 @@
+<div class="container">
+  <header>
+   <div class="logo">
+
+     <h1>Crypto Pulse</h1>
+     <span class="status" [class.connected]="cryptoService.connectionStatus()=== 'Connected'">
+       {{cryptoService.connectionStatus()}}
+     </span>
+
+   </div>
+
+   <div class="coin-selector">
+
+     @for(coin of coins; track coin){
+     <button
+       [class.active]="selectedCoin===coin"
+       (click)="selectCoin(coin)">
+       {{ coin }}
+     </button>
+     }
+
+   </div>
+  </header>
+  <main>
+   <div class="ticker-card">
+     <h2>{{ selectedCoin }} / USDT</h2>
+    <div class="price">
+      ${{cryptoService.currentPrice()  | number:'1.2-2'}}
+
+    </div>
+   </div>
+   <div class="chart-container">
+     <canvas #chartCanvas></canvas>
+
+   </div>
+  </main>
+</div>

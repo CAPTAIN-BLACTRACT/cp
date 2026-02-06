@@ -1,0 +1,86 @@
+:host{
+  display: block;
+  background-color: #0b0e11;
+  min-height: 100vh;
+  color: white;
+  font-family:'Segoe UI', sans-serif;
+}
+
+.container{
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.logo h1{
+  margin: 0;
+  font-size: 1.5rem;
+  color: #fff;
+
+}
+
+.status{
+  font-size: 0.8rem;
+  color: #666;
+  padding: 2px 8px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  margin-left: 10px;
+}
+
+.status.connected{
+  color:#00ff88;
+  border-color:#00ff88;
+}
+
+.coin-selector{display:flex;gap:10px}
+
+button{
+  background:#1e2329;
+  color:#888;
+  border:none;
+  padding:8px 16px;
+  border-radius:4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+button:hover{background:#2b3139;color:white;}
+button:active{background:#00ff88;color:#000;}
+
+.ticker-card{
+  text-align:center;
+  margin-bottom:20px;
+}
+.ticker-card h2{
+  color:#888;
+  margin:0;
+  font-size:1rem;
+}
+
+.price{
+  font-size: 4rem;
+  font-weight:bold;
+  color:white;
+  text-shadow:0 0 20px rgba(0,255,136,0.3);
+}
+
+.chart-container{
+  position:relative;
+  height:400px;
+  background:#1e2329;
+  border-radius:12px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
