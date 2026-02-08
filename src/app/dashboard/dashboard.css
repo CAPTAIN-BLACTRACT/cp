@@ -22,9 +22,15 @@ header{
   gap:20px;
 }
 
+.logo{
+  display: flex;
+  align-items:baseline;
+  gap:10px;
+}
+
 .logo h1{
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   color: #fff;
 
 }
